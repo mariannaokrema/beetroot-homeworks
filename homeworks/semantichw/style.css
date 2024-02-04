@@ -492,3 +492,115 @@ header p {
 footer a:hover {
   background-color: rgb(112, 48, 156);
 }
+
+@media only screen and (max-width: 768px) {
+  
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    height: auto;
+    background-color: rgb(123, 92, 181);
+    padding-bottom: 10px;
+  }
+
+  header::before,
+  header::after {
+    display: none;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-list li {
+    padding: 15px 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    /* margin-top: 50px;
+    margin-left: 0; */
+  }
+
+  #europe,
+  #asia,
+  #ukraine,
+  #tropicalislands {
+    padding: 20px;
+  }
+
+  .h3europe,
+  .h3asia,
+  .h3ukraine,
+  .h3tropicalislands {
+    margin-top: 30px;
+  }
+
+  .line1,
+  .line2,
+  .line4,
+  .line6 {
+    display: none;
+  }
+
+  .line,
+  .line3,
+  .line5,
+  .line7 {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #europe p,
+  #asia p,
+  #ukraine p,
+  #tropicalislands p {
+    padding: 15px;
+  }
+
+  #europe ul,
+  #asia ul,
+  #ukraine ul,
+  #tropicalislands ul {
+    margin: 0;
+  }
+
+  .iframe,
+  .iframe2,
+  .iframe3,
+  .iframe4 {
+    flex-direction: column;
+  }
+  #europe a,
+  #asia a,
+  #ukraine a,
+  #tropicalislands a {
+    margin-left: 0;
+  }
+
+  #europe iframe,
+  #asia iframe,
+  #ukraine iframe,
+  #tropicalislands iframe {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  footer {
+    display: flex;
+  }
+  .hwlink a {
+    margin-left: 10px;
+  }
+}
