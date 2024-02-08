@@ -6,40 +6,47 @@
     <title>Shop List</title>
     <link rel="stylesheet" href="../../styles/normalize.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="app">
       <header class="header">
-        <p>CSS Dinner Shopping List</p>
+        <div >
+          <p class="header-text">CSS Dinner Shopping List</p>
+          <span class="header-span">Let’s go to the mall!</span>
+        </div>
       </header>
       <div class="shopping-list">
         <div class="list-item first-item">
-          <input type="checkbox" id="product1" />
-          <label for="product1">A lot of pickles</label>
+          <input type="checkbox" id="product1" class="item-input"/>
+          <label for="product1" class="item-label label1">A lot of pickles</label>
         </div>
         <div class="list-item second-item">
-          <input type="checkbox" id="product2" />
-          <label for="product2">10 apples</label>
+          <input type="checkbox" id="product2" class="item-input"/>
+          <label for="product2" class="item-label label2">10 apples</label>
         </div>
         <div class="list-item third-item">
-          <input type="checkbox" id="product3" />
-          <label for="product3">20 oranges</label>
+          <input type="checkbox" id="product3" class="item-input"/>
+          <label for="product3" class="item-label label3">20 oranges</label>
         </div>
         <div class="list-item fourth-item">
-          <input type="checkbox" id="product4" />
-          <label for="product4">13 plates</label>
+          <input type="checkbox" id="product4" class="item-input"/>
+          <label for="product4" class="item-label label4">13 plates</label>
         </div>
         <div class="list-item fifth-item">
-          <input type="checkbox" id="product5" />
-          <label for="product5">15 bentos</label>
+          <input type="checkbox" id="product5" class="item-input"/>
+          <label for="product5" class="item-label label5">15 bentos</label>
         </div>
         <div class="list-item sixth-item">
-          <input type="checkbox" id="product6" />
-          <label for="product6">1 bottle of Sake</label>
+          <input type="checkbox" id="product6" class="item-input"/>
+          <label for="product6" class="item-label label6">1 bottle of Sake</label>
         </div>
       </div>
       <footer class="footer">
-        <p>Bon appetit :)</p>
+        <p class="footer-text">Bon appetit :)</p>
+        <a href="../../index.html">HOMEPAGE</a>
       </footer>
     </div>
   </body>
