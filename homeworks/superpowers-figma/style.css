@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navigation-item {
+  padding-left: 35px;
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
+.header-button :nth-child(1) {
+  background-color: white;
+  color: black;
+  border: 1px solid grey;
+}
+
+/* Вторая кнопка будет белой */
+.header-button :nth-child(2) {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  margin-left: 25px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-button button {
+  height: 36px;
+}
+
+.button {
+  display: inline-block;
+  padding: 25px 30px;
+  line-height: 0;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
