@@ -5,8 +5,8 @@ body {
   background-color: #3b3f45;
   border: solid white 10px;
 }
-.header,
-.footer {
+
+.header {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -33,63 +33,69 @@ body {
   margin-bottom: 6px;
   color: #ff8984;
 }
-/* Shopping list */
-.shopping-list {
+/* List */
+.list-wrap {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 635px;
-  margin-left: 470px;
+  justify-content: space-around;
+}
+.list {
+  display: flex;
   margin-top: 20px;
+  flex-direction: column;
+  width: fit-content;
 }
 /* list item background-color (paird number) */
-.shopping-list div:nth-child(2n) {
+.list-item:nth-child(2n) {
   background-color: #88839e;
 }
 /* list item background-color (unpaird number) */
-.shopping-list div:nth-child(2n + 1) {
+.list-item:nth-child(2n + 1) {
   background-color: #9b96ac;
 }
 /* list item size */
 .list-item {
-  line-height: 3;
-  width: 100%;
+  line-height: 1;
+  display: block;
+  padding: 10px;
+  padding-right: 120px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 /* list item changing background-color after hover */
-.shopping-list div:hover {
+.list-item:hover {
   background-color: #625e77;
+  border-color: #fff;
 }
-/* appearing of white lines after hover */
-.shopping-list div:hover::before, /* top line */
-.shopping-list div:hover::after /* bottom line */ {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: white;
+/* labels text */
+.list-text {
+  font-size: 18px;
+  color: #ffffff;
 }
 
-/* item labels text */
-.item-label {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
+.list-text-little {
+  font-size: 11px;
   color: #ffffff;
 }
 /* list-item checkbox */
 .item-input {
   transform: scale(2); /* size of checkbox square */
-  margin: 17px;
+  margin-right: 15px;
 }
-/* Clicking on checkbox*/
-.item-input:checked + .item-label {
+/* Clicking on checkbox */
+
+.list-input:checked ~ .list-text-little {
   text-decoration: line-through; /* cross out the text */
-  color: #e8e8e8ab; /* changing the color of the text on the lighter one */
+  color: #e8e8e8ab; /* changing the color of the text on the lighter one  */
+}
+
+.list-input:checked + .list-text {
+  text-decoration: line-through; /* cross out the text */
+  color: #e8e8e8ab; /* changing the color of the text on the lighter one  */
 }
 
 /* clicking on any list item */
-.shopping-list .list-item:active {
+.list-item:active {
   background-color: rgba(
     240,
     107,
@@ -98,81 +104,28 @@ body {
   ); /* background color red, when active */
 }
 
-/* first item (for the next lessons about CSS) */
-.label1::after {
-  content: "(for the next lessons about CSS)";
-  padding-left: 10px;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
-}
-/* second item (for more CSS manipulations) */
-.label2::after {
-  content: "(for more CSS manipulations)";
-  padding-left: 10px;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
-}
-
-/* third item (because they are awesome) */
-.label3::after {
-  content: " (because they are awesome)";
-  padding-left: 10px;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
-}
-
-/* fourth item (hm... they always dissapear) */
-.label4::after {
-  content: "  (hm... they always dissapear)";
-  padding-left: 10px;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
-}
-
-/* sixth item  (for my friends) */
-
-.label6::after {
-  content: "   (for my friends)";
-  padding-left: 10px;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer {
   display: flex;
-  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
   flex-direction: column;
-  width: 635px;
-  margin-left: 470px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 5;
+  width: 427px;
+  background-color: #4a4f56;
+  align-items: center;
 }
 
 /* Bon appetit :) */
 .footer-text {
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
+
   color: #ff8984;
-  margin-top: 11px;
-  margin-bottom: 11px;
 }
 
 /* HOMEPAGE */
