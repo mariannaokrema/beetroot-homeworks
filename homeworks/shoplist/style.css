@@ -15,7 +15,7 @@ body {
 .header {
   padding-bottom: 12px;
 }
-
+/* CSS Dinner Shopping List  */
 .header-text {
   font-size: 24px;
   font-weight: 700;
@@ -24,6 +24,7 @@ body {
   color: #ff8984;
   margin-bottom: 4px;
 }
+/* Let’s go to the mall!  */
 .header-span {
   font-style: normal;
   font-weight: 400;
@@ -32,6 +33,7 @@ body {
   margin-bottom: 6px;
   color: #ff8984;
 }
+/* Shopping list */
 .shopping-list {
   display: flex;
   align-items: center;
@@ -40,29 +42,33 @@ body {
   margin-left: 470px;
   margin-top: 20px;
 }
+/* list item background-color (paird number) */
 .shopping-list div:nth-child(2n) {
   background-color: #88839e;
 }
-
+/* list item background-color (unpaird number) */
 .shopping-list div:nth-child(2n + 1) {
   background-color: #9b96ac;
 }
-
+/* list item size */
 .list-item {
   line-height: 3;
   width: 100%;
 }
+/* list item changing background-color after hover */
 .shopping-list div:hover {
-  background-color: #625E77;
-  
+  background-color: #625e77;
 }
-.shopping-list div:hover::before,
-.shopping-list div:hover::after {
+/* appearing of white lines after hover */
+.shopping-list div:hover::before, /* top line */
+.shopping-list div:hover::after /* bottom line */ {
   content: "";
   display: block;
   height: 2px;
   background-color: white;
 }
+
+/* item labels text */
 .item-label {
   font-size: 18px;
   font-weight: 400;
@@ -71,21 +77,28 @@ body {
   text-align: left;
   color: #ffffff;
 }
+/* list-item checkbox */
 .item-input {
-  transform: scale(2);
+  transform: scale(2); /* size of checkbox square */
   margin: 17px;
 }
-/* При натисканні на чекбокс */
-.item-input:checked + .item-label  {
-  text-decoration: line-through; /* Закреслюємо текст */
-  color: #e8e8e8ab; /* Змінюємо колір тексту на блідо-сірий */
+/* Clicking on checkbox*/
+.item-input:checked + .item-label {
+  text-decoration: line-through; /* cross out the text */
+  color: #e8e8e8ab; /* changing the color of the text on the lighter one */
 }
 
-/* При натисканні на будь-який елемент списку */
+/* clicking on any list item */
 .shopping-list .list-item:active {
-  background-color: rgba(240, 107, 107, 0.5); /* Червоний фон */
+  background-color: rgba(
+    240,
+    107,
+    107,
+    0.5
+  ); /* background color red, when active */
 }
 
+/* first item (for the next lessons about CSS) */
 .label1::after {
   content: "(for the next lessons about CSS)";
   padding-left: 10px;
@@ -95,7 +108,7 @@ body {
   line-height: 13px;
   letter-spacing: 0em;
 }
-
+/* second item (for more CSS manipulations) */
 .label2::after {
   content: "(for more CSS manipulations)";
   padding-left: 10px;
@@ -105,6 +118,8 @@ body {
   line-height: 13px;
   letter-spacing: 0em;
 }
+
+/* third item (because they are awesome) */
 .label3::after {
   content: " (because they are awesome)";
   padding-left: 10px;
@@ -115,6 +130,7 @@ body {
   letter-spacing: 0em;
 }
 
+/* fourth item (hm... they always dissapear) */
 .label4::after {
   content: "  (hm... they always dissapear)";
   padding-left: 10px;
@@ -125,6 +141,8 @@ body {
   letter-spacing: 0em;
 }
 
+/* sixth item  (for my friends) */
+
 .label6::after {
   content: "   (for my friends)";
   padding-left: 10px;
@@ -134,11 +152,6 @@ body {
   line-height: 13px;
   letter-spacing: 0em;
 }
-
-
-
-
-
 
 .footer {
   display: flex;
@@ -151,6 +164,7 @@ body {
   padding-bottom: 5;
 }
 
+/* Bon appetit :) */
 .footer-text {
   font-size: 18px;
   font-weight: 400;
@@ -160,6 +174,8 @@ body {
   margin-top: 11px;
   margin-bottom: 11px;
 }
+
+/* HOMEPAGE */
 a {
   color: wheat;
 }
