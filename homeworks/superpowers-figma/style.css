@@ -42,6 +42,8 @@ body {
 .navigation-link {
   text-decoration: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
+
 }
 /* yellow navigation link */
 .navigation-yellow-link {
