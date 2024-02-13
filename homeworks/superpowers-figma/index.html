@@ -3,104 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Superpowers-figma</title>
-    <!-- Normalize css -->
-    <link rel="stylesheet" href="../../styles/normalize.css" />
-    <!-- Local css -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Montserrat font -->
+    <title>Productly</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- * Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- favicon image -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- * Styles -->
+    <!-- Variables -->
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- Main -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Local -->
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="app">
-      <!-- header -->
+      <!-- * Header -->
       <header class="header">
-        <!-- local wrapper -->
         <div class="wrapper header-wrapper">
-          <div class="header-logo">
-            <img
-              class="header-logo-circle"
-              src="./assets/logo.png"
-              alt="header logo"
-            />
-            <img
-              class="header-logo-text"
-              src="./assets/Productly.svg"
-              alt="Productly"
-            />
-          </div>
-          <!-- navigation -->
+          <!-- Logo -->
+          <a class="logo" href="/">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+
+          <!-- Navigation -->
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link navigation-yellow-link" href=""
-                  >Product</a
-                >
+                <a href="#" class="link navigation-link yellow">Product</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="">Customers</a>
+                <a href="#" class="link navigation-link">Customers</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="">Pricing</a>
+                <a href="#" class="link navigation-link">Pricing</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="">Resources</a>
+                <a href="#" class="link navigation-link">Resources</a>
               </li>
             </ul>
           </nav>
-          <!-- Sign-in Sign out buttons -->
-          <div class="header-button">
-            <button class="button">Sign in</button>
-            <button class="button">Sign up</button>
+
+          <div class="header-buttons">
+            <button type="button" class="button button--white">
+              <span>Sign In</span>
+            </button>
+            <button type="button" class="button">
+              <span>Sign Up</span>
+            </button>
           </div>
         </div>
       </header>
-      <!-- banner -->
-      <section class="banner">
+
+      <!-- * Banner -->
+      <main class="banner">
         <div class="wrapper banner-wrapper">
-          <!-- heading -->
+          <!-- Content -->
           <div class="banner-content">
-            <h1 class="banner-heading">
-              The Design Thinking
-              <div>
-                <span>superpowers</span>
-              </div>
-            </h1>
-            <!-- text -->
-            <div class="banner-text-wrapper">
-              <p class="banner-text">
-                Tools, tutorials, design and innovation experts, all in one
-              </p>
-
-              <p class="banner-text">
-                place! The most intuitive way to imagine your next user
-              </p>
-
-              <p class="banner-text">experience</p>
-            </div>
-            <!-- button -->
-
-            <div class="banner-button-wrapper">
-              <button class="banner-button">Get started</button>
-            </div>
+            <h1>The Design Thinking superpowers</h1>
+            <p class="banner-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <button type="button" class="button button--big banner-button">
+              <span>Get started</span>
+            </button>
           </div>
-          <!-- banner svg img -->
-          <img
-            class="banner-image"
-            src="./assets/Superpowers.svg"
-            alt="Happy students"
-          />
-        </div>
-      </section>
 
-      <a href="../../index.html">HOMEPAGE</a>
+          <!-- Image block -->
+          <div class="banner-image-block">
+            <img src="./assets/banner.svg" alt="banner-image" />
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

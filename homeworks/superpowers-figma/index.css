@@ -1,0 +1,112 @@
+/* * Header */
+.header {
+  min-height: var(--h-header);
+  align-items: center;
+  display: flex;
+}
+
+.header-wrapper {
+  justify-content: space-between;
+  padding-bottom: 15px;
+  align-items: center;
+  padding-top: 15px;
+  display: flex;
+}
+
+.header-buttons {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+/* * Logo */
+.logo {
+  height: fit-content;
+  max-width: 200px;
+  display: flex;
+  width: 100%;
+}
+
+/* * Navigation */
+.navigation-list {
+  align-items: center;
+  display: flex;
+}
+
+.navigation-link {
+  padding: 10px;
+  display: flex;
+}
+
+.yellow {
+  color: var(--c-primary);
+}
+
+/* * Button */
+.button {
+  background-color: var(--c-primary);
+  border: 1px solid var(--c-primary);
+  transition: var(--t-normal);
+  justify-content: center;
+  color: var(--c-white);
+  align-items: center;
+  padding-right: 25px;
+  border-radius: 4px;
+  padding-left: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  height: 45px;
+}
+
+.button:hover {
+  background-color: var(--c-black);
+  border-color: var(--c-black);
+  color: var(--c-white);
+}
+
+.button--white {
+  background-color: var(--c-white);
+  border-color: var(--c-blue);
+  color: var(--c-black);
+}
+
+.banner--big {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* * Banner */
+.banner {
+  min-height: calc(100vh - var(--h-header));
+  align-items: center;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  display: flex;
+}
+
+.banner-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 55px;
+}
+
+.banner-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.banner-image-block {
+  display: flex;
+  width: 100%;
+}
+
+.banner-text {
+  font-size: 1.125em;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.banner-button {
+  margin-top: 20px;
+}
