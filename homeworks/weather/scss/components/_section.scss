@@ -1,0 +1,38 @@
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-wrapper {
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Center the table horizontally */
+  }
+
+  &-first-row,
+  &-second-row,
+  &-third-row,
+  &-fourth-row {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+  }
+}
+
+.city-wrapper {
+  opacity: 0.7;
+  height: 120px;
+  border: 1px solid var(--c-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
+  flex: 1;
+  
+}

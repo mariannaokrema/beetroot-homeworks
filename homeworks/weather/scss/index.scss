@@ -1,0 +1,16 @@
+// *Normalize
+@import './normalize';
+// *Variables
+@import './variables';
+// *Main
+@import './main';
+
+// *Header
+
+@import './components/header' ;
+
+// *Main
+
+@import './components/section' ;
+
+@import './components/content';
