@@ -1,0 +1,53 @@
+.table  { 
+ 
+  
+  &-blue {
+    background-color: var(--c-blue);
+    width: 580px;
+   
+  }
+
+  &-aquamarine {
+    background-color: var(--c-aquamarine);
+    width: 290px;
+   
+  }
+  &-plump {
+    background-color: var(--c-plump);
+    width: 290px;
+    
+  }
+  &-red {
+    background-color: var(--c-red);
+    width: 290px;
+  }
+  &-peach {
+    background-color: var(--c-peach);
+    width: 290px;
+  }
+  &-yellow {
+    background-color: var(--c-yellow);
+    width: 290px;
+  }
+  &-olive {
+    background-color: var(--c-olive);
+    width: 290px;
+  }
+  &-grey {
+    background-color: var(--c-grey);
+    width: 290px;
+  }
+  &-pink {
+    background-color: var(--c-pink);
+    width: 580px;
+  }
+  &-green {
+    background-color: var(--c-green);
+    width: 290px;
+  }
+  &-purple {
+    background-color: var(--c-violet);
+    width: 1160px;
+  }
+}
+
