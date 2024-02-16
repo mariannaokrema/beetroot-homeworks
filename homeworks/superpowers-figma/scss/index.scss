@@ -1,0 +1,24 @@
+// *Normalize
+@import './normalize';
+// *Variables
+@import './variables';
+// *Main
+@import './main';
+
+// *Header
+
+@import './components/header' ;
+
+// *Main
+
+// banner
+@import './components/banner' ;
+// footer
+@import './components/footer' ;
+// content-wrapper
+
+
+@import './elements/buttons';
+@import './elements/logo';
+@import './elements/navigation';
+@import './elements/picture';

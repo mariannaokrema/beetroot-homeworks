@@ -1,0 +1,19 @@
+/* * Navigation */
+.navigation {
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    display: flex;
+    padding: 10px;
+  }
+}
+
+.yellow {
+  color: var(--c-primary);
+  &::before {
+    background-color: var(--c-primary);
+  }
+}
