@@ -1,53 +1,62 @@
-.table  { 
- 
-  
+.table {
+  // Lisbon
   &-blue {
     background-color: var(--c-blue);
     width: 580px;
-   
   }
-
+  // Paris
   &-aquamarine {
     background-color: var(--c-aquamarine);
     width: 290px;
-   
   }
+  // Belgrade
   &-plump {
     background-color: var(--c-plump);
     width: 290px;
-    
   }
+  // Venice
   &-red {
     background-color: var(--c-red);
     width: 290px;
   }
+  // Tel-Avive
   &-peach {
     background-color: var(--c-peach);
     width: 290px;
   }
+  // Cair
   &-yellow {
     background-color: var(--c-yellow);
     width: 290px;
   }
+  // New-York
   &-olive {
     background-color: var(--c-olive);
     width: 290px;
   }
+  // New-Dehli
   &-grey {
     background-color: var(--c-grey);
     width: 290px;
   }
+  // San-Francisco
   &-pink {
     background-color: var(--c-pink);
     width: 580px;
   }
+  // Tokyo
   &-green {
     background-color: var(--c-green);
     width: 290px;
   }
+  // Sydney
   &-purple {
     background-color: var(--c-violet);
     width: 1160px;
+  }
+  // HOME link
+  &-link {
+    color: rgb(95, 255, 255);
   }
 }
 

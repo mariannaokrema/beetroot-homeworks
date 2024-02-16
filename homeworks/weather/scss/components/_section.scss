@@ -6,9 +6,8 @@
     margin-right: auto;
     max-width: 1163px;
     border: 2px solid rgb(227, 226, 226);
-    
   }
-
+  // table rows
   &-first-row,
   &-second-row,
   &-third-row,
@@ -19,12 +18,14 @@
     width: 100%;
   }
 }
+// for phones
 @media (max-width: 1163px) {
   .table-wrapper {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
+// city-wtapper
 .city-wrapper {
   opacity: 0.7;
   height: 120px;
@@ -36,9 +37,8 @@
   gap: 18px;
   transition: all 0.35s ease-in-out;
   cursor: pointer;
-  
 }
-
+// hover
 .city-wrapper:hover {
   opacity: 1;
   border: 2px solid rgb(227, 226, 226);

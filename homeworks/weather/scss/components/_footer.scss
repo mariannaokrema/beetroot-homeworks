@@ -1,12 +1,11 @@
 .footer {
   &-wrapping {
     padding-top: 35px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
     margin-left: 175px;
-    transition: margin-left 0.50s ease-in-out; /* add a transition for a smooth animation */
-    
+    transition: margin-left 0.5s ease-in-out; /* add a transition for a smooth animation */
   }
-
+  // for phones
   @media (max-width: 768px) {
     &-wrapping {
       margin-left: 40px; /* при достижении ширины экрана 768px и менее устанавливаем margin-left в 0 */

@@ -3,14 +3,12 @@
     padding-top: 35px;
     padding-bottom: 35px;
     margin-left: 175px;
-    transition: margin-left 0.50s ease-in-out;
+    transition: margin-left 0.5s ease-in-out;
   }
+  // for phones
   @media (max-width: 768px) {
     &-wrapping {
       margin-left: 40px; /* при достижении ширины экрана 768px и менее устанавливаем margin-left в 0 */
     }
   }
 }
-
-
- 
