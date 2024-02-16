@@ -1,0 +1,111 @@
+// General
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #480e63;
+  border: 12px solid #f1f1f1;
+  transition: transform 0.5s ease-in-out;
+
+// big center circle
+  &-big {
+    border: 12px solid #480e63;
+    background-color: #f1f1f1;
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  // small center circle
+  &-small {
+    border: 12px solid #480e63;
+    background-color: #290148;
+    height: 200px;
+    width: 200px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  // circles around big circle
+  &--0 {
+    position: absolute;
+    left: 0;
+  }
+
+  &--0:hover {
+    transform: translate(45px);
+  }
+  &--45 {
+    position: absolute;
+    top: 90px;
+    left: 90px;
+  }
+  &--45:hover {
+    transform: translate(30px, 30px);
+    cursor: pointer;
+  }
+  &--90 {
+    position: absolute;
+    top: 0;
+  }
+  &--90:hover {
+    transform: translateY(45px);
+    cursor: pointer;
+  }
+  &--135 {
+    position: absolute;
+    top: 90px;
+    right: 90px;
+  }
+  &--135:hover {
+    transform: translate(-30px, 30px);
+    cursor: pointer;
+  }
+  &--180 {
+    position: absolute;
+    right: 0;
+  }
+  &--180:hover {
+    transform: translateX(-45px);
+    cursor: pointer;
+  }
+  &--225 {
+    position: absolute;
+    right: 90px;
+    bottom: 90px;
+  }
+  &--225:hover {
+    transform: translate(-30px, -30px);
+    cursor: pointer;
+  }
+  &--270 {
+    position: absolute;
+    left: 90px;
+    bottom: 90px;
+  }
+  &--270:hover {
+    transform: translate(30px, -30px);
+    cursor: pointer;
+  }
+  &--315 {
+    position: absolute;
+    bottom: 0;
+  }
+  &--315:hover {
+    transform: translateY(-45px);
+  }
+}
+
+// big and small circles
+.circle-big + .circle-small {
+  transition: transform 0.5s ease-in-out;
+}
+.circle-big:active {
+  transform: scale(1.5);
+}
+.circle-small:active {
+  transform: scale(1.5);
+}

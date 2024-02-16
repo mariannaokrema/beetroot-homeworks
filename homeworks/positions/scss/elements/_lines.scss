@@ -1,0 +1,17 @@
+// lines
+.line {
+  width: calc(100% - 100px);
+  height: 1px;
+  background-color: #f1f1f1;
+  position: absolute;
+  &--45 {
+    transform: rotate(45deg);
+  }
+  &--90 {
+    transform: rotate(90deg);
+  }
+  &--135 {
+    transform: rotate(135deg);
+  }
+}
+
