@@ -12,6 +12,6 @@
   transition: transform 4s ease-in-out;
 }
 
-.wrapper:hover {
+.wrapper:active {
   transform: rotate(360deg);
 }
