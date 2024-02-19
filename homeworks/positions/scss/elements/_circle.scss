@@ -98,7 +98,10 @@
     transform: translateY(-45px);
   }
 }
-
+.circle-big:active ~ .wrapper {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}
 // big and small circles
 .circle-big + .circle-small {
   transition: transform 0.5s ease-in-out;
