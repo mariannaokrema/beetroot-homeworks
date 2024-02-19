@@ -4,3 +4,15 @@
   justify-content: center;
 }
 
+.relative-wrapper {
+  position: relative;
+  padding: 24px;
+}
+
+.relative-wrapper-child {
+  position: absolute;
+
+  &-1 {
+    border-left: 1px solid var(--c-primary);
+  }
+}

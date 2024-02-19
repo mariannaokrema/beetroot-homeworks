@@ -13,4 +13,13 @@
 .span {
   font-family: var(--f-base);
   font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--c-grey)
+}
+.p {
+  font-family: var(--f-base);
+  font-weight: 500;
+  font-size: var(--f-base);
+  line-height: 24px;
 }

@@ -17,7 +17,17 @@
     width: 100%;
     height: 100%;
     z-index: 2;
+   
+    
+
+    &:active {
+      & + .content {
+        transform: rotate(360deg);
+      }
+    }
   }
+
+
 
   // small center circle
   &-small {
@@ -27,6 +37,12 @@
     width: 200px;
     z-index: 3;
     position: absolute;
+
+    &:active {
+      & + .content {
+        transform: rotate(360deg);
+      }
+    }
   }
 
   // circles around big circle
@@ -98,17 +114,5 @@
     transform: translateY(-45px);
   }
 }
-.circle-big:active ~ .wrapper {
-  transform: rotate(360deg);
-  transition: transform 0.5s ease-in-out;
-}
-// big and small circles
-.circle-big + .circle-small {
-  transition: transform 0.5s ease-in-out;
-}
-.circle-big:active {
-  transform: scale(1.5);
-}
-.circle-small:active {
-  transform: scale(1.5);
-}
+
+

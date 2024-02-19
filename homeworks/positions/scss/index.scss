@@ -1,13 +1,18 @@
 // * Components
+// body
 @import "./components/body";
+// wrapper
+@import "./components/wrapper";
+// content
+@import "./components/content";
+
 
 // * Elements
 // circles
 @import "./elements/circle.scss";
 // lines
 @import "./elements/lines";
-// wrapper
-@import "./elements/wrapper";
+
 
 
 
