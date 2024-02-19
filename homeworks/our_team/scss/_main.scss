@@ -1,7 +1,6 @@
  /* * Global  */
 * {
-  /* TODO -< Remove */
-  border: 1px solid red;
+  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -45,11 +44,15 @@ h6 {
 }
 
 h1 {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom:   50px;
   font-size: 60px;
   line-height: 66px;
   font-family: var(--f-roboto);
   font-weight: 900;
   color: var(--c-primary);
+  border-bottom: 1px solid var(--c-primary);
 }
 
 p {

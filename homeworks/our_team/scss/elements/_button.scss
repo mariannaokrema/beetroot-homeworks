@@ -5,13 +5,14 @@
   font-size: 14px;
   line-height: 14px;
   color: var(--c-grey);
-  border: 1px solid var(--c-primary);
-  border-color: var(--c-white);
+ 
+
 padding: 25px;
 }
 
 .button-link {
   padding-left: 10px;
   padding-right: 10px;
-
+ border: 1px solid var(--c-primary);
+ cursor: pointer;
 }
