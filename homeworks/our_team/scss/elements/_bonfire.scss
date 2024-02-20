@@ -1,6 +1,7 @@
 .bonfire {
   position: absolute;
   background-color: var(--c-white);
-  left: 633px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -10px;
 }

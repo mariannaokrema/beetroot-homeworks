@@ -38,11 +38,7 @@
     z-index: 3;
     position: absolute;
 
-    &:active {
-      & + .content {
-        transform: rotate(360deg);
-      }
-    }
+  
   }
 
   // circles around big circle

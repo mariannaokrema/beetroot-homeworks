@@ -4,15 +4,6 @@
   position: relative;
 }
 
-.main-line {
-  width: 1px;
-  height: 520px;
-  background-color: var(--c-primary);
-  position: absolute;
-  z-index: 6;
-  top: 40px;
-}
-
 .main-wrapper {
   display: flex;
   align-items: center;
