@@ -1,0 +1,18 @@
+{
+  "name": "freehand",
+  "version": "1.0.0",
+  "description": "freehand init",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w src/index.pug --out ."
+  },
+  "keywords": [
+    "scss",
+    "src",
+    "html",
+    "css",
+    "pug"
+  ],
+  "author": "mariannaokrema2017@gmail.com marianna okrema",
+  "license": "ISC"
+}

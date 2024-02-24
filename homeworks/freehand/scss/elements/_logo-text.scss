@@ -1,0 +1,39 @@
+.text {
+  font-family: var(--f-quicksand);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+
+  &--header-logo {
+    color: var(--c-blue);
+  }
+  &--footer-logo {
+    color: var(--c-white);
+  }
+
+  &--block {
+    font-family: var(--f-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &--main-sub-text {
+    font-family: var(--f-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7690a8;
+  }
+
+  &--main-heading {
+    font-family: var(--f-nunitosans);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+    color: #16133d;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+}

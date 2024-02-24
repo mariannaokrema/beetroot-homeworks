@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--c-blue);
+  &--wrapper {
+    
+    padding-left: 135px;
+    padding-right: 135px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+
+  &--logo-wrapper {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    gap: 10px;
+    display: flex;
+    
+  }
+}

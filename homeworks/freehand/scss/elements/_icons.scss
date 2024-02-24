@@ -1,0 +1,48 @@
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  &--block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+
+  &--footer-wrapper {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+  }
+
+  &--footer-wrapper:hover {
+    cursor: pointer;
+    color: #3db370;
+  }
+  &--socials {
+    display: flex;
+    gap: 10px;
+    width: 2em;
+    height: 2em;
+  }
+  &--clover {
+    color: var(--c-primary);
+  }
+  &--twitter {
+    transition: 0.3s ease-in-out;
+    color: var(--c-primary);
+  }
+  &--twitter:hover {
+    color: var(--c-blue);
+  }
+
+
+}
