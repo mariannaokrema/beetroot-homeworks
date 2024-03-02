@@ -1,0 +1,17 @@
+.name {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 15px;
+
+  input[type='text'] {
+    width: 200px; /* Ширина инпута */
+    height: 30px; /* Высота инпута */
+    border: 2px solid #ccc; /* Толщина, стиль и цвет границы */
+    border-radius: 5px; /* Закругление углов */
+    padding: 5px; /* Отступы внутри инпута */
+  }
+  input[type='text']:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    outline: none; /* Убрать стандартное выделение */
+  }
+}

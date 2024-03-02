@@ -1,0 +1,38 @@
+.gender {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+
+  &--label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+input[type='radio'] {
+ 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  border: 5px solid #0667ce; 
+  background-color: #fff; 
+  cursor: pointer; 
+  margin-top: -15px;
+}
+
+
+input[type='radio']:hover {
+  background-color: #f0f0f0; 
+}
+
+
+input[type='radio']:checked {
+  background-color: #007bff; 
+  border-color: #007bff; 
+}
+

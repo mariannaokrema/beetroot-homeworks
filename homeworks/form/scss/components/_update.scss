@@ -1,0 +1,22 @@
+.update {
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+
+  &--button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &:hover {
+      background-color: #0667ce;
+    }
+  }
+}

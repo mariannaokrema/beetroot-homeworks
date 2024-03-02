@@ -1,0 +1,20 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #969696;
+  cursor: pointer;
+}
+
+.icon-photo {
+  position: absolute;
+  left: 255px;
+  top: 35px;
+}
+.icon-delete {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}

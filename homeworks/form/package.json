@@ -1,0 +1,12 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w src/index.pug --out ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

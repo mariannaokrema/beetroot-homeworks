@@ -1,0 +1,22 @@
+.sign-up {
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+
+  &--button {
+    width: 410px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: #0667ce;
+    }
+  }
+}
