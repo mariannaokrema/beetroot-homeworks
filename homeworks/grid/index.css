@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 660px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  font-family: "Delius Unicase";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Две колонки с соотношением 2:1 */
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  align-items: center;
+  justify-items: start;
+}
+
+
+.item--1 {
+  grid-column: span 1; /* item-1 занимает две колонки */
+}
+
+.item--2 {
+  grid-column: span 2; /* Остальные item'ы занимают одну колонку */
+}
+
+.item--3 {
+  grid-column: span 2;
+}
+.item--4 {
+  grid-column: span 1;
+}
+
+.item--5 {
+  grid-column: span 1;
+}
+
+.item--6 {
+  grid-column: span 2;
+}
+
+.item--7 {
+  grid-column: span 1; /* item-1 занимает две колонки */
+}
+
+.item--8 {
+  grid-column: span 2; /* Остальные item'ы занимают одну колонку */
+}
+
+.item--9 {
+  grid-column: span 2;
+}
+.item--10 {
+  grid-column: span 1;
+}
+
+.item--11 {
+  grid-column: span 2;
+}
+
+.item--12 {
+  grid-column: span 1;
+}
+
+.container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+
+
+.item--14 {
+  grid-row: span 2;
+}
+
+
+.item--17 {
+  grid-row: span 2;
+}
+
+.item--18 {
+  grid-row: span 2;
+}
+
+
+.item--20 {
+  grid-column: span 2;
+}
+
+.item--21 {
+  grid-column: span 2;
+}
+
+.image--wrapper {
+  position: relative;
+  max-width: 100%;
+  transition: 0.7s ease-in-out;
+  opacity: 0.9;
+}
+
+.image--wrapper:hover {
+  cursor: pointer;
+  opacity: 10;
+}
+.span {
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+}
+
+.span-time {
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+.image--wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
