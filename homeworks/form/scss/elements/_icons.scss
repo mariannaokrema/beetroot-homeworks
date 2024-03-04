@@ -7,14 +7,21 @@
   fill: currentColor;
   color: #969696;
   cursor: pointer;
+
+  &-photo {
+    position: absolute;
+    left: 255px;
+    top: 30px;
+  }
+
+  &-delete {
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.icon-photo {
-  position: absolute;
-  left: 255px;
-  top: 35px;
-}
-.icon-delete {
-  margin-bottom: 15px;
-  margin-left: 10px;
-}
+

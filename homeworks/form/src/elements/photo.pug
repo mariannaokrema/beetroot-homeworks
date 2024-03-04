@@ -3,11 +3,11 @@ mixin photo
     img.photo-section--photo(src='./assets/photo.png' alt='photo')
     .photo-input
       label
-        input(type='text' name='photo')
-        // Вставка SVG иконки
+        input(type='file' name='file')
+        
         svg.icon.icon-photo
           use(xlink:href='#icon-photo')
-        .sub-text.sub-text--2 Up to 1 MB (300x300 px)
+        .photo-section--sub-text Up to 1 MB (300x300 px)
       div
     svg.icon.icon-delete
       use(xlink:href='#icon-delete')

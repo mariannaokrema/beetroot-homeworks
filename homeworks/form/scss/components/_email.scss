@@ -1,17 +1,26 @@
-/* Определение стилей при фокусе на инпуте */
 .email {
-  
-
-  input[type="email"] {
-    width: 200px; /* Ширина инпута */
-    height: 30px; /* Высота инпута */
-    border: 2px solid #ccc; /* Толщина, стиль и цвет границы */
-    border-radius: 5px; /* Закругление углов */
-    padding: 5px; /* Отступы внутри инпута */
+  &--sub-text {
+    color: #969696;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    gap: 5px;
+    padding-top: 5px;
   }
-  input[type="email"]:focus {
-    border-color: #007bff; /* Цвет границы при фокусе */
-    outline: none; /* Убрать стандартное выделение */
+  input[required]:invalid {
+    border: 1px solid red;
   }
-}  
 
+  input[type='email'] {
+    width: 200px;
+    height: 35px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  input[type='email']:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}

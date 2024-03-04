@@ -1,10 +1,10 @@
 mixin fourth-row
   .fourth-row
     label
-      .zip-code Zip Code
-      input#password(type='password' name='password')
-      .error
+      .label Zip Code
+      input(type='password' name='password' required)
+      .error This is a required field.
     label
-      .phone Phone Number
-      input(type='number' name='phone-number')
-      .error
+      .label Phone Number
+      input(type='number' name='phone-number' required)
+      .error This is a required field.

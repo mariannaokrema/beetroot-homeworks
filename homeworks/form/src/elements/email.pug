@@ -2,9 +2,9 @@ mixin email
   label
     .email
       .label E-mail
-      input(type='email' name='email')
-      .error
-      .sub-text We will never share your email with anyone else.
+      input(type='email' name='email' required)
+      .error This is a required field.
+      .email--sub-text We will never share your email with anyone else.
         
 
         

@@ -1,22 +1,23 @@
 .update {
-  padding-top: 20px;
-  padding-right: 50px;
-  padding-bottom: 10px;
+  border: 1px solid #0667ce;
+  background-color: #007bff;
+  font-weight: 500;
+  color: #007bff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+  display: flex;
+  width: 150px;
+  height: 35px;
+  transition: 0.5s ease-in-out;
 
-  &--button {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    line-height: 30px;
-    cursor: pointer;
-    color: #ffffff;
-    font-weight: 500;
-    transition: 0.5s ease-in-out;
-    padding-left: 30px;
-    padding-right: 30px;
+  &:hover {
+    background-color: #0667ce;
+  }
 
-    &:hover {
-      background-color: #0667ce;
-    }
+  &--span {
+    color: white;
   }
 }

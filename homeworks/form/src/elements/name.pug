@@ -2,10 +2,11 @@ mixin name
   .name
         label
           .label First-name
-          input(type='text' name='first-name')
-          .error
+          input(type='text' name='name' required)
+          .error This is a required field.
+
         label
           .label Last-name
-          input(type='text' name='last-name')
-          .error
+          input(type='text' name='last-name' required)
+          .error This is a required field.
         label

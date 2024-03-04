@@ -1,7 +1,8 @@
 .wrapper {
-  padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 55px;
+  border-color: #f7f7f7;
+  margin-top: 50px;
 }

@@ -3,9 +3,13 @@
   gap: 10px;
   padding-top: 20px;
 
+  input[required]:invalid {
+    border: 1px solid red;
+  }
+
   input[type='password'] {
     width: 200px;
-    height: 30px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;
@@ -17,7 +21,7 @@
 
   input[type='number'] {
     width: 200px;
-    height: 30px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;

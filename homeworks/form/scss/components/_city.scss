@@ -1,25 +1,26 @@
 .city {
   display: flex;
   gap: 10px;
+  padding-top: 10px;
 
   select {
-    width: 200px; /* Ширина селектора */
-    height: 30px; /* Высота селектора */
-    border: 2px solid #ccc; /* Толщина, стиль и цвет границы */
-    border-radius: 5px; /* Закругление углов */
-    padding: 5px; /* Внутренние отступы внутри селектора */
-    font-size: 14px; /* Размер шрифта */
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    height: 35px;
   }
   select:focus {
-    border-color: #007bff; /* Цвет границы при фокусе */
-    outline: none; /* Убрать стандартное выделение */
+    border-color: #007bff;
+    outline: none;
   }
   select::-ms-expand {
-  display: none; /* Убрать стрелку для IE/Edge */
+    display: none;
   }
 
   select::after {
-    content: '\25BC'; /* Символ стрелки вниз */
+    content: '\25BC';
     position: absolute;
     top: 50%;
     right: 10px;
@@ -27,4 +28,3 @@
     pointer-events: none;
   }
 }
-

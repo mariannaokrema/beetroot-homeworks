@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  padding-top: 20px;
+
+  &--line {
+    background-color: #e4e4e4;
+    width: 410px;
+    height: 1px;
+  }
+
+  &--wrapper {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &--text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: #007bff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
