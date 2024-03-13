@@ -24,7 +24,7 @@ const circleRadius = prompt('Tell me a radius of a circle');
 
 const area = Math.PI * circleRadius ** 2;
 
-console.log('Площа окружності: ', area, 'см^2');
+console.log('Area of ​​a circle ', area, 'см^2');
 
 // другий пункт
 const distance = prompt(
