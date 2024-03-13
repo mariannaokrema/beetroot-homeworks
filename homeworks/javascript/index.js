@@ -1,15 +1,15 @@
 // Норма
 // перший пункт
-const Name = prompt('Tell me your name');
+const userName = prompt('Tell me your name');
 
-console.log('Welcome, ', Name, '!');
+console.log('Welcome, ', userName, '!');
 
 // другий пункт
-const year = 2024;
+const YEAR = 2024;
 
 const birthdate = +prompt('What is your birthyear?');
 
-console.log('Your age is: ', year - birthdate, 'y.o.');
+console.log('Your age is: ', YEAR - birthdate, 'y.o.');
 
 // третій пункт
 const squareSide = prompt(
