@@ -22,23 +22,23 @@ const car = {
     console.log(`Drivers: ${this.drivers.join(', ')}`);
   },
 
-  // Метод для додавання імені водія у список
+  // додавання імені водія у список
   addDriver(driverName) {
     this.drivers.push(driverName);
   },
 
-  // Метод для перевірки водія на наявність його імені у списку
+  // перевірка водія на наявність його імені у списку
   checkDriver(driverName) {
     return this.drivers.includes(driverName);
   },
 
-  // Метод для підрахунку необхідного часу та кількості палива для подолання переданої відстані
+  // підрахунок необхідного часу та кількості палива для подолання переданої відстані
   calculateTimeAndFuel(distance) {
     const hours = distance / this.averageSpeed; // загальний час в годинах
     const breaksCount = Math.floor(hours / 4); // кількість перерв
     const totalHours = hours + breaksCount; // загальний час з перервами
 
-    // Розрахунок необхідної кількості палива
+    // кількшсть палива
     const totalFuel = (distance / 100) * this.averageFuelConsumption;
 
     return { totalHours, totalFuel };
@@ -62,7 +62,7 @@ const time = {
   minutes: 0,
   seconds: 0,
 
-  // Функція для виведення часу на екран
+  //виведення часу на екран
   displayTime() {
     console.log(
       `${this.hours.toString().padStart(2, '0')}:${this.minutes
@@ -71,19 +71,19 @@ const time = {
     );
   },
 
-  // Функція для зміни часу на передану кількість секунд
+  //зміна часу на передану кількість секунд
   changeSeconds(sec) {
     this.seconds += sec;
     this.normalizeTime();
   },
 
-  // Функція для зміни часу на передану кількість хвилин
+  // зміна часу на передану кількість хвилин
   changeMinutes(min) {
     this.minutes += min;
     this.normalizeTime();
   },
 
-  // Функція для зміни часу на передану кількість годин
+  //зміна часу на передану кількість годин
   changeHours(hr) {
     this.hours += hr;
     this.normalizeTime();
@@ -99,15 +99,15 @@ const time = {
     this.minutes %= 60;
     this.hours += extraMinutes;
 
-    this.hours %= 24; // Час не може перевищувати 24 години
+    this.hours %= 24;
   },
 };
 
 // Приклад використання
 time.displayTime(); // виведе "00:00:00"
-time.changeSeconds(150); // додамо 150 секунд
+time.changeSeconds(150); //плюс 150 секунд
 time.displayTime(); // виведе "00:02:30"
-time.changeMinutes(75); // додамо 75 хвилин
+time.changeMinutes(75); // плюс 75 хвилин
 time.displayTime(); // виведе "01:17:30"
-time.changeHours(5); // додамо 5 годин
+time.changeHours(5); // плюс 5 годин
 time.displayTime(); // виведе "06:17:30"
