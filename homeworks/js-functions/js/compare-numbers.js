@@ -13,11 +13,8 @@ function compareNumbers() {
   } else {
     return 0;
   }
-
-
-
 }
 const result = compareNumbers();
 console.log('The result of comparison: ' + result);
 
-export { compareNumbers, result };
+export { compareNumbers };
